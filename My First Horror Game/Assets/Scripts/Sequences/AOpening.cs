@@ -19,7 +19,7 @@ public class AOpening : MonoBehaviour
     {
         yield return new WaitForSeconds(1.5f);
         FadeScreenIn.SetActive (false);
-        TextBox.GetComponent <Text> ().text = "I need to get out of here";
+        TextBox.GetComponent <Text> ().text = "I need to get out of here.";
         yield return new WaitForSeconds(2);
         TextBox.GetComponent<Text>().text = "";
         ThePlayer.GetComponent<PlayerMovement>().enabled = true;
