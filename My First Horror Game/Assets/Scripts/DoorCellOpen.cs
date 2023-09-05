@@ -24,7 +24,7 @@ public class DoorCellOpen : MonoBehaviour
             ActionDisplay.SetActive(true);
             ActionText.SetActive(true);
         }
-        if (Input.GetButtonDown("Acion"))
+        if (Input.GetButtonDown("Action"))
         {
             if (TheDistance < 2)
             {
