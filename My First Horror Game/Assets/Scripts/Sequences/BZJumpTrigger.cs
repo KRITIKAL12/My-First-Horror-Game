@@ -15,8 +15,13 @@ public class BZJumpTrigger : MonoBehaviour
         TheDoor.GetComponent<Animation>().Play("JumpDoorAnim");
         DoorBang.Play();
         TheZombie.SetActive(true);
+        StartCoroutine(PlayJumpMusic());
     }
 
-
+    IEnumerator PlayJumpMusic()
+    {
+        yield return new WaitForSeconds(0.4f);
+        DoorJumpMusic.Play();
+    }
 
 }

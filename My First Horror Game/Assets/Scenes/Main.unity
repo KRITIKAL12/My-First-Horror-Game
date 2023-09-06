@@ -148,7 +148,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 8f7380da49034cd488ddff94b1ac35d1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -10.962744
+      value: -16.096
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 8f7380da49034cd488ddff94b1ac35d1, type: 3}
       propertyPath: m_LocalPosition.y
@@ -156,7 +156,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 8f7380da49034cd488ddff94b1ac35d1, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 18.74251
+      value: 19.697
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 8f7380da49034cd488ddff94b1ac35d1, type: 3}
       propertyPath: m_LocalRotation.w
@@ -14244,7 +14244,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!65 &1710523819
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14337,7 +14337,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DoorBang: {fileID: 1610977319}
   DoorJumpMusic: {fileID: 1935355213}
-  TheZombie: {fileID: 0}
+  TheZombie: {fileID: 12197746}
   TheDoor: {fileID: 1338944075}
 --- !u!1 &1712129641
 GameObject:
