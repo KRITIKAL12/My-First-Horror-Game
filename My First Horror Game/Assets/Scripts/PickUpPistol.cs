@@ -12,6 +12,7 @@ public class PickUpPistol : MonoBehaviour
     public GameObject RealPistol;
     public GameObject ExtraCross;
     public GameObject GuideArrow;
+    public GameObject TheJumpTrigger;
 
     // Update is called once per frame
     void Update()
@@ -27,7 +28,8 @@ public class PickUpPistol : MonoBehaviour
             ActionText.GetComponent<Text>().text = "Pick Up Pistol";
             ActionDisplay.SetActive(true);
             ActionText.SetActive(true);
-        }
+           
+        }   
         if (Input.GetButtonDown("Action"))
         {
             if (TheDistance <= 2)
@@ -39,6 +41,7 @@ public class PickUpPistol : MonoBehaviour
                 RealPistol.SetActive(true);
                 ExtraCross.SetActive(false);
                 GuideArrow.SetActive(false);
+                TheJumpTrigger.SetActive(true);
             }
         }
     }
