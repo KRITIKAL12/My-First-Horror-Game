@@ -12698,7 +12698,7 @@ Animation:
   m_Animations:
   - {fileID: 7400000, guid: 25525a45a68470348b13e2549f747e6c, type: 2}
   m_WrapMode: 0
-  m_PlayAutomatically: 1
+  m_PlayAutomatically: 0
   m_AnimatePhysics: 0
   m_CullingType: 0
 --- !u!1 &1338944077
@@ -13671,7 +13671,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 63edabc8cbfa6cb4e80fff263629b89c, type: 3}
+  m_audioClip: {fileID: 8300000, guid: e915e2b49ef57364bb0cc69d8d71e3ef, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -14215,13 +14215,14 @@ GameObject:
   - component: {fileID: 1710523821}
   - component: {fileID: 1710523820}
   - component: {fileID: 1710523819}
+  - component: {fileID: 1710523823}
   m_Layer: 3
   m_Name: JumpTrigger001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!65 &1710523819
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14230,7 +14231,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1710523818}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -14300,6 +14301,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 40
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1710523823
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1710523818}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 415fb88cefae079419d899861e246739, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DoorBang: {fileID: 1610977319}
+  DoorJumpMusic: {fileID: 1935355213}
+  TheZombie: {fileID: 0}
+  TheDoor: {fileID: 1338944075}
 --- !u!1 &1712129641
 GameObject:
   m_ObjectHideFlags: 0
