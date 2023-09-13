@@ -243,7 +243,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 12197746}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: afea4d14b990a1842b43d5e858498ca1, type: 3}
   m_Name: 
@@ -535,7 +535,7 @@ MonoBehaviour:
   ActionDisplay: {fileID: 1642311085}
   ActionText: {fileID: 1605136345}
   FakePistol: {fileID: 513823145}
-  RealPistol: {fileID: 0}
+  RealPistol: {fileID: 1663928305}
   ExtraCross: {fileID: 1514304869}
   GuideArrow: {fileID: 1977256459}
   TheJumpTrigger: {fileID: 1710523818}
@@ -12946,6 +12946,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6f8ee9e57f0ae87429c40e77c8b75822, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 16aa1bbc641151b44afc6024fb184f6d, type: 2}
+    - target: {fileID: 2300002, guid: 6f8ee9e57f0ae87429c40e77c8b75822, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 16aa1bbc641151b44afc6024fb184f6d, type: 2}
+    - target: {fileID: 2300004, guid: 6f8ee9e57f0ae87429c40e77c8b75822, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 16aa1bbc641151b44afc6024fb184f6d, type: 2}
+    - target: {fileID: 2300006, guid: 6f8ee9e57f0ae87429c40e77c8b75822, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 16aa1bbc641151b44afc6024fb184f6d, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6f8ee9e57f0ae87429c40e77c8b75822, type: 3}
 --- !u!4 &1338586729
@@ -14366,12 +14382,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 880e014094e868a4d8709a9d63a49466, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TheGun: {fileID: 0}
+  TheGun: {fileID: 1663928305}
   MuzzleFlash: {fileID: 1915283618}
   GunFire: {fileID: 961089450}
   MuzzleFlashLight: {fileID: 304212967}
   IsFiring: 0
-  TargetDistance: 0
+  TargetDistance: 5
   DamageAmount: 5
 --- !u!111 &1663928308
 Animation:
@@ -15268,9 +15284,9 @@ Animation:
   m_GameObject: {fileID: 1915283618}
   m_Enabled: 1
   serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: f8887f9383d070b46bcdf23cf537060b, type: 2}
+  m_Animation: {fileID: 7400000, guid: b0298ac9514db424c94a7ac44fb267ac, type: 2}
   m_Animations:
-  - {fileID: 7400000, guid: f8887f9383d070b46bcdf23cf537060b, type: 2}
+  - {fileID: 7400000, guid: b0298ac9514db424c94a7ac44fb267ac, type: 2}
   m_WrapMode: 0
   m_PlayAutomatically: 0
   m_AnimatePhysics: 0
@@ -16025,6 +16041,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: M9 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: bc36510796ac19748954a10f9bd1f6f6, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: bc36510796ac19748954a10f9bd1f6f6, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -16063,15 +16083,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: bc36510796ac19748954a10f9bd1f6f6, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: bc36510796ac19748954a10f9bd1f6f6, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: bc36510796ac19748954a10f9bd1f6f6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
+      value: -90
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: bc36510796ac19748954a10f9bd1f6f6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y

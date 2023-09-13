@@ -21,7 +21,7 @@ public class ZombieDeath : MonoBehaviour
         if (EnemyHealth <= 0 && StatusCheck == 0)
         {
             StatusCheck = 2;
-            TheEnemy.GetComponent<Animation>().Stop("Z_Walk");
+            TheEnemy.GetComponent<Animation>().Stop("Z_Idle");
             TheEnemy.GetComponent<Animation>().Play("Z_FallingBack");
         }
     }
