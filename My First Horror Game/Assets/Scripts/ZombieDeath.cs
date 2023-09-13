@@ -8,7 +8,7 @@ public class ZombieDeath : MonoBehaviour
     public GameObject TheEnemy;
     public int StatusCheck;
 
-    void DamageZombie (int DamageAmount)
+    void DamageZombie(int DamageAmount)
     {
         EnemyHealth -= DamageAmount;
     }

@@ -1572,6 +1572,7 @@ GameObject:
   - component: {fileID: 702566142}
   - component: {fileID: 702566143}
   - component: {fileID: 702566144}
+  - component: {fileID: 702566145}
   m_Layer: 0
   m_Name: First Person Player
   m_TagString: Untagged
@@ -1664,6 +1665,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   footstepsSound: {fileID: 1400734498}
+--- !u!114 &702566145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 702566139}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 880e014094e868a4d8709a9d63a49466, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TheGun: {fileID: 1663928305}
+  MuzzleFlash: {fileID: 1915283618}
+  GunFire: {fileID: 961089450}
+  MuzzleFlashLight: {fileID: 304212967}
+  IsFiring: 0
+  TargetDistance: 5
+  DamageAmount: 5
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -14370,25 +14390,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400002, guid: bc36510796ac19748954a10f9bd1f6f6, type: 3}
   m_PrefabInstance: {fileID: 2146282520}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1663928307
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1663928305}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 880e014094e868a4d8709a9d63a49466, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  TheGun: {fileID: 1663928305}
-  MuzzleFlash: {fileID: 1915283618}
-  GunFire: {fileID: 961089450}
-  MuzzleFlashLight: {fileID: 304212967}
-  IsFiring: 0
-  TargetDistance: 5
-  DamageAmount: 5
 --- !u!111 &1663928308
 Animation:
   m_ObjectHideFlags: 0
@@ -15204,7 +15205,7 @@ MeshCollider:
   m_GameObject: {fileID: 1915283618}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
