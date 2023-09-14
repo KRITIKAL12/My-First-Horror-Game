@@ -13,6 +13,7 @@ public class ZombieAi : MonoBehaviour
     public AudioSource hurtSound2;
     public AudioSource hurtSound3;
     public int hurtGen;
+    public GameObject theFlash;
 
     // Update is called once per frame
     void Update()
@@ -59,6 +60,9 @@ public class ZombieAi : MonoBehaviour
         {
             hurtSound3.Play();
         }
+        theFlash.SetActive(true);
+        yield return new WaitForSeconds(0.1f);
+        theFlash.SetActive(false);
 
         yield return new WaitForSeconds(1.1f);
         GlobalHealth.currentHealth -= 5;
