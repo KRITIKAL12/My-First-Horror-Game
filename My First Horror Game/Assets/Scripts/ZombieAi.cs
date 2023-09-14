@@ -9,6 +9,10 @@ public class ZombieAi : MonoBehaviour
     public float enemySpeed = 0.01f;
     public bool attackTrigger = false;
     public bool isAttacking = false;
+    public AudioSource hurtSound1;
+    public AudioSource hurtSound2;
+    public AudioSource hurtSound3;
+    public int hurtGen;
 
     // Update is called once per frame
     void Update()
@@ -42,9 +46,24 @@ public class ZombieAi : MonoBehaviour
     IEnumerator InflictDamage()    
     {
         isAttacking = true;
+        hurtGen = Random.Range(1, 4);
+        if (hurtGen == 1)
+        {
+            hurtSound1.Play();
+        }
+        if (hurtGen == 2)
+        {
+            hurtSound2.Play();
+        }
+        if (hurtGen == 3)
+        {
+            hurtSound3.Play();
+        }
+
         yield return new WaitForSeconds(1.1f);
         GlobalHealth.currentHealth -= 5;
-        yield return new WaitForSeconds(0.2f);
+
+        yield return new WaitForSeconds(1f);
         isAttacking = false;
     }
 

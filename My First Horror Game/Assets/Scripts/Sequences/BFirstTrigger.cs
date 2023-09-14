@@ -12,6 +12,7 @@ public class BFirstTrigger : MonoBehaviour
 
     void OnTriggerEnter ()
     {
+        this.GetComponent<BoxCollider>().enabled = false;
         ThePlayer.GetComponent<PlayerMovement>().enabled = false;
         StartCoroutine(ScenePlayer());
     }
