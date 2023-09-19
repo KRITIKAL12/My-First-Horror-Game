@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering.PostProcessing;
 
 public class ZombieAi : MonoBehaviour
 {
@@ -15,6 +16,17 @@ public class ZombieAi : MonoBehaviour
     public int hurtGen;
     public GameObject theFlash;
 
+    public PostProcessProfile postProcessProfile;
+
+    private ChromaticAberration chromaticAberrationEffect;
+
+    private void Start()
+    {
+        // Get the Chromatic Aberration effect from the Post-Processing Profile
+        chromaticAberrationEffect = postProcessProfile.GetSetting<ChromaticAberration>();
+
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -24,12 +36,18 @@ public class ZombieAi : MonoBehaviour
             enemySpeed = 0.01f;
             theEnemy.GetComponent<Animation>().Play("Z_Walk_InPlace");
             transform.position = Vector3.MoveTowards(transform.position, thePlayer.transform.position, enemySpeed);
+
+            chromaticAberrationEffect.intensity.value = 0f;
+
         }
         if (attackTrigger == true && isAttacking == false)
         {
             enemySpeed = 0;
             theEnemy.GetComponent<Animation>().Play("Z_Attack");
             StartCoroutine(InflictDamage());
+
+            chromaticAberrationEffect.intensity.value = 1f;
+           
         }
     }
 
@@ -69,6 +87,9 @@ public class ZombieAi : MonoBehaviour
 
         yield return new WaitForSeconds(1f);
         isAttacking = false;
+
+        chromaticAberrationEffect.intensity.value = 0f;
+        
     }
 
 } 
