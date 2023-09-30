@@ -8,28 +8,25 @@ public class ABeginning : MonoBehaviour
     public GameObject ThePlayer;
     public GameObject FadeScreenIn;
     public GameObject TextBox;
-    
+    private Animation textBoxAnimation;
 
     void Start()
     {
         ThePlayer.GetComponent<PlayerMovement>().enabled = false;
+        textBoxAnimation = TextBox.GetComponent<Animation>();
         StartCoroutine(ScenePlayer());
     }
 
     IEnumerator ScenePlayer()
     {
-        yield return new WaitForSeconds(1.5f);
-        TextBox.GetComponent<Text>().text = "...where am I?";
-     
-        yield return new WaitForSeconds(2);
-        TextBox.GetComponent<Text>().text = "";
-        yield return new WaitForSeconds(0.5F);
-        TextBox.GetComponent<Text>().text = "I need to get out of here.";
+        yield return new WaitForSeconds(3);
+        TextBox.SetActive(true);
+        textBoxAnimation.Play("Beginning text Animation");
 
-        yield return new WaitForSeconds(1.7f);
+        yield return new WaitForSeconds(11);
         TextBox.GetComponent<Text>().text = "";
+        FadeScreenIn.SetActive(false);
         ThePlayer.GetComponent<PlayerMovement>().enabled = true;
 
-        FadeScreenIn.SetActive(false);
     }
 }
