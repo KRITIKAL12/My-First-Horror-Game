@@ -22239,23 +22239,16 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'The forest tugged at my heartstrings,
-
-    pulling me back to a cherished
-
-    cabin
-    from my youth.
+  m_Text: 'In my village, a strange illness started to spread like wildfire. People
+    were scared, and it felt like hope was slipping away. But I couldn''t just stand
+    by. I left my village to search for a cure, and a whole year passed before I
+    finally returned with one.
 
 
-    Without my parents, this trip felt different.
 
-    The road
-    here, once familiar,
-
-    had vanished under the relentless growth of nature.
-
-    No
-    chance of driving my car this far anymore.'
+    But when I got back, everything had changed.
+    The village I once knew was now in ruins, and the sickness had taken its toll. 
+    Everything I had known was now doomed.'
 --- !u!222 &640807953
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -51359,7 +51352,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1470893596}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 891, y: 70.5, z: 339.5}
+  m_LocalPosition: {x: 833, y: 70.5, z: 823}
   m_LocalScale: {x: 0.9999999, y: 0.9999999, z: 0.9999999}
   m_ConstrainProportionsScale: 0
   m_Children:
