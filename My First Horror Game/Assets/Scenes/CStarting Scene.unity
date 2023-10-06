@@ -334,7 +334,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 578376449398627443, guid: 6dc4cf4496348884d8ee27743ae38562, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.50497174
+      value: -0.5049717
       objectReference: {fileID: 0}
     - target: {fileID: 578376449398627443, guid: 6dc4cf4496348884d8ee27743ae38562, type: 3}
       propertyPath: m_LocalPosition.z
@@ -53536,7 +53536,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1645987096}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -53599,8 +53599,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1645987096}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 801.03, y: 5.36, z: 794.69}
-  m_LocalScale: {x: 6, y: 10.750801, z: 6}
+  m_LocalPosition: {x: 801.03, y: 5.84, z: 794.69}
+  m_LocalScale: {x: 6.5, y: 11.6467, z: 6.5}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1806475001}
@@ -53621,6 +53621,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stalkerDest: {fileID: 1291244991}
   stalkerEnemy: {fileID: 1806475000}
+  attackTrigger: 0
+  isAttacking: 0
+  hurtSound1: {fileID: 2130737448}
+  hurtSound2: {fileID: 553709554}
+  hurtSound3: {fileID: 1751807596}
+  hurtGen: 0
+  theFlash: {fileID: 1904420163}
+  postProcessProfile: {fileID: 11400000, guid: 5fcda212a73ed8645bcdf86c1c945f49, type: 2}
 --- !u!195 &1645987102
 NavMeshAgent:
   m_ObjectHideFlags: 0
