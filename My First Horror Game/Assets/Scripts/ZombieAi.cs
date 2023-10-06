@@ -47,7 +47,7 @@ public class ZombieAi : MonoBehaviour
             StartCoroutine(InflictDamage());
 
             chromaticAberrationEffect.intensity.value = 1f;
-           
+
         }
     }
 
@@ -62,7 +62,7 @@ public class ZombieAi : MonoBehaviour
     }
 
 
-    IEnumerator InflictDamage()    
+    IEnumerator InflictDamage()
     {
         isAttacking = true;
         hurtGen = Random.Range(1, 4);
@@ -89,7 +89,7 @@ public class ZombieAi : MonoBehaviour
         isAttacking = false;
 
         chromaticAberrationEffect.intensity.value = 0f;
-        
+
     }
 
-} 
+}
