@@ -18,6 +18,8 @@ public class StalkerAI : MonoBehaviour
     public int hurtGen;
     public GameObject theFlash;
 
+    public float enemySpeed = 0.01f;
+
     public PostProcessProfile postProcessProfile;
 
     private ChromaticAberration chromaticAberrationEffect;
@@ -35,7 +37,7 @@ public class StalkerAI : MonoBehaviour
 
         if (isStalking == false)
         {
-            stalkerEnemy.GetComponent<Animator>().Play("Z_Idle");
+            stalkerEnemy.GetComponent<Animation>().Play("Z_Idle");
         }
         else
         {
@@ -47,7 +49,7 @@ public class StalkerAI : MonoBehaviour
         // Check for attack trigger
         if (attackTrigger == true && isAttacking == false)
         {
-
+            enemySpeed = 0;
             stalkerEnemy.GetComponent<Animation>().Play("Z_Attack");
             stalkerAgent.isStopped = true;
             StartCoroutine(InflictDamage());
@@ -56,6 +58,7 @@ public class StalkerAI : MonoBehaviour
         }
         else
         {
+            enemySpeed = 0.01f;
             stalkerAgent.isStopped = false;
         }
 
@@ -94,7 +97,7 @@ public class StalkerAI : MonoBehaviour
         yield return new WaitForSeconds(1.1f);
         GlobalHealth.currentHealth -= 5;
 
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(1.9f);
         isAttacking = false;
 
         chromaticAberrationEffect.intensity.value = 0f;
