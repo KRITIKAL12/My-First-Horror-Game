@@ -23,7 +23,7 @@ public class FirePistol : MonoBehaviour
                 StartCoroutine(FiringPistol());
             }
         }
-    }
+    } 
 
     IEnumerator FiringPistol ()
     {

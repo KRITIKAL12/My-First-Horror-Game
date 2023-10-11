@@ -2,31 +2,37 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ZombieDeath : MonoBehaviour
+public class EnemyHealth : MonoBehaviour
 {
-    public int EnemyHealth = 20;
+    public int maxHealth = 20;
+    private int currentHealth;
     public GameObject TheEnemy;
     public int StatusCheck;
     public AudioSource JumpScareMusic;
     public AudioSource AmbMusic;
 
-    public void DamageZombie(int DamageAmount)
+   
+    // Method to apply damage to the enemy
+    public void TakeDamage(int damage)
     {
-        EnemyHealth -= DamageAmount;
+        Debug.Log("Enemy health reduced to: " + maxHealth);
+        maxHealth -= damage;
+       
     }
 
-
-
-    // Update is called once per frame
     void Update()
     {
-        if (EnemyHealth <= 0 && StatusCheck == 0)
+        if (maxHealth <= 0 && StatusCheck == 0)
         {
-            this.GetComponent<ZombieAi>().enabled = false;
+            Debug.Log("Enemy died.");
+            // Add code to handle enemy death (e.g., play death animation, deactivate GameObject)
+            // For example:
+            this.GetComponent<StalkerAI>().enabled = false;
             this.GetComponent<BoxCollider>().enabled = false;
             StatusCheck = 2;
             TheEnemy.GetComponent<Animation>().Stop("Z_Walk_InPlace");
             TheEnemy.GetComponent<Animation>().Play("Z_FallingBack");
+           
             JumpScareMusic.Stop();
             AmbMusic.Play();
         }
