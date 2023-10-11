@@ -18029,8 +18029,6 @@ MonoBehaviour:
   ThePlayer: {fileID: 702566139}
   FadeScreenIn: {fileID: 1712129641}
   TextBox: {fileID: 1252645140}
-  Line01: {fileID: 1224905300}
-  Line02: {fileID: 538211290}
 --- !u!1 &1469587995
 GameObject:
   m_ObjectHideFlags: 0
@@ -19549,7 +19547,6 @@ MonoBehaviour:
   ThePlayer: {fileID: 702566139}
   TextBox: {fileID: 1252645140}
   TheMarker: {fileID: 1977256459}
-  line03: {fileID: 265293506}
 --- !u!1001 &1732446520
 PrefabInstance:
   m_ObjectHideFlags: 0
