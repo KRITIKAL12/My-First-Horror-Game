@@ -51,8 +51,9 @@ public class StalkerAI : MonoBehaviour
         {
             enemySpeed = 0;
             stalkerEnemy.GetComponent<Animation>().Play("Z_Attack");
-            stalkerAgent.isStopped = true;
             StartCoroutine(InflictDamage());
+            stalkerAgent.isStopped = true;
+            
 
             chromaticAberrationEffect.intensity.value = 1f;
         }
