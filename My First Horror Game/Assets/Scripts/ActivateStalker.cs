@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class ActivateStalker : MonoBehaviour
 {
+    public StalkerAI stalkerAI;
+
     void OnTriggerEnter(Collider other)
     {
         this.gameObject.GetComponent<CapsuleCollider>().enabled = false;
-        StalkerAI.isStalking = true;
+        stalkerAI.isStalking = true;
     }
 }

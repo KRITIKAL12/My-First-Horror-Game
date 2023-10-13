@@ -9,7 +9,7 @@ public class StalkerAI : MonoBehaviour
     public GameObject stalkerDest;
     NavMeshAgent stalkerAgent;
     public GameObject stalkerEnemy;
-    public static bool isStalking;
+    public bool isStalking;
     public bool attackTrigger = false;
     public bool isAttacking = false;
     public AudioSource hurtSound1;
