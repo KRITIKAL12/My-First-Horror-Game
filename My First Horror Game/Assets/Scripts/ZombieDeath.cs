@@ -10,6 +10,7 @@ public class ZombieDeath : MonoBehaviour
     public AudioSource JumpScareMusic;
     public AudioSource AmbMusic;
 
+
     public void DamageZombie(int DamageAmount)
     {
         EnemyHealth -= DamageAmount;
@@ -27,6 +28,7 @@ public class ZombieDeath : MonoBehaviour
             StatusCheck = 2;
             TheEnemy.GetComponent<Animation>().Stop("Z_Walk_InPlace");
             TheEnemy.GetComponent<Animation>().Play("Z_FallingBack");
+
             JumpScareMusic.Stop();
             AmbMusic.Play();
         }

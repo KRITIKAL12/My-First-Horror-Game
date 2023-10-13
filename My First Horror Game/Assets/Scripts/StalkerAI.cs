@@ -30,7 +30,7 @@ public class StalkerAI : MonoBehaviour
         chromaticAberrationEffect = postProcessProfile.GetSetting<ChromaticAberration>();
     }
 
- 
+
     void Update()
     {
 
@@ -53,7 +53,7 @@ public class StalkerAI : MonoBehaviour
             stalkerEnemy.GetComponent<Animation>().Play("Z_Attack");
             StartCoroutine(InflictDamage());
             stalkerAgent.isStopped = true;
-            
+
 
             chromaticAberrationEffect.intensity.value = 1f;
         }

@@ -5,7 +5,7 @@ using UnityEngine;
 public class AxeCollision : MonoBehaviour
 {
     public SwingAxe SwingAxe;
-    public GameObject HitParticle;
+   
     public int DamageAmount = 5;
 
     public void OnTriggerEnter(Collider other)
@@ -13,8 +13,7 @@ public class AxeCollision : MonoBehaviour
         if (other.tag == "Enemy" && SwingAxe.IsSlashing)
         {
             Debug.Log("Axe collision with enemy.");
-            Vector3 particlePosition = other.transform.position + (transform.position - other.transform.position) * 0.5f;
-            Instantiate(HitParticle, particlePosition, other.transform.rotation);
+          
 
             EnemyHealth enemyHealth = other.GetComponent<EnemyHealth>();
 

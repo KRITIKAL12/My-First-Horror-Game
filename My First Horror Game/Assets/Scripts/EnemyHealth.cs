@@ -23,7 +23,7 @@ public class EnemyHealth : MonoBehaviour
     {
         Debug.Log("Enemy health reduced to: " + maxHealth);
         maxHealth -= damage;
-       
+
     }
 
     void Update()
@@ -39,7 +39,7 @@ public class EnemyHealth : MonoBehaviour
             StatusCheck = 2;
             TheEnemy.GetComponent<Animation>().Stop("Z_Walk_InPlace");
             TheEnemy.GetComponent<Animation>().Play("Z_FallingBack");
-           
+
             JumpScareMusic.Stop();
             AmbMusic.Play();
         }
