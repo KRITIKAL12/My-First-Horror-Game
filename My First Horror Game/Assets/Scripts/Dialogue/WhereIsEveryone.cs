@@ -8,7 +8,8 @@ public class WhereIsEveryone : MonoBehaviour
 {
     public GameObject ThePlayer;
     public GameObject DialogueBox;
-     
+    public string dialogueText;
+
     void OnTriggerEnter()
     {
         this.GetComponent<BoxCollider>().enabled = false;
@@ -18,7 +19,7 @@ public class WhereIsEveryone : MonoBehaviour
 
     IEnumerator WhereIs ()
     {
-        DialogueBox.GetComponent<Text>().text = "Why does it feel so quiet here? I wonder where everyone is...";
+        DialogueBox.GetComponent<Text>().text = dialogueText;
 
         yield return new WaitForSeconds(3.1f);
         DialogueBox.GetComponent<Text>().text = "";
