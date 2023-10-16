@@ -360,6 +360,79 @@ GameObject:
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 8
   m_IsActive: 1
+--- !u!1 &52714476
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 52714477}
+  - component: {fileID: 52714480}
+  - component: {fileID: 52714479}
+  - component: {fileID: 52714478}
+  m_Layer: 0
+  m_Name: DoorTrigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &52714477
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 52714476}
+  m_LocalRotation: {x: 0.008324447, y: 0.9999654, z: -0, w: 0}
+  m_LocalPosition: {x: 0.2958263, y: 0.958367, z: -5.4384356}
+  m_LocalScale: {x: 0.89637053, y: 1.673448, z: 0.3816066}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1613162061}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &52714478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 52714476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff3da2370ba54374ca27926096e114ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TheDistance: 0
+  ActionDisplay: {fileID: 1331636974}
+  ActionText: {fileID: 659151150}
+  TheDoor: {fileID: 1228202606}
+  CreakSound: {fileID: 1857841071}
+  ExtraCross: {fileID: 586310958}
+--- !u!65 &52714479
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 52714476}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &52714480
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 52714476}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &77191215
 GameObject:
   m_ObjectHideFlags: 0
@@ -33978,7 +34051,7 @@ Light:
   m_Shape: 0
   m_Color: {r: 0.8207547, g: 0.7135618, b: 0.4212175, a: 1}
   m_Intensity: 2
-  m_Range: 20
+  m_Range: 79.8
   m_SpotAngle: 179
   m_InnerSpotAngle: 1
   m_CookieSize: 10
@@ -44385,9 +44458,9 @@ GameObject:
   - component: {fileID: 1002031844}
   - component: {fileID: 1002031847}
   - component: {fileID: 1002031846}
-  - component: {fileID: 1002031845}
+  - component: {fileID: 1002031848}
   m_Layer: 0
-  m_Name: DoorTrigger
+  m_Name: ExitTrigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -44408,24 +44481,6 @@ Transform:
   m_Father: {fileID: 1386882005}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: -5.335, y: -90.279, z: -0.015}
---- !u!114 &1002031845
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1002031843}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ff3da2370ba54374ca27926096e114ac, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  TheDistance: 0
-  ActionDisplay: {fileID: 1331636974}
-  ActionText: {fileID: 659151150}
-  TheDoor: {fileID: 1386882003}
-  CreakSound: {fileID: 1857841071}
-  ExtraCross: {fileID: 586310958}
 --- !u!65 &1002031846
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -44447,6 +44502,24 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1002031843}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1002031848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1002031843}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4dcd7a458c65bcc4aa9bdd81d1c02ec4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TheDistance: 0
+  ActionDisplay: {fileID: 1331636974}
+  ActionText: {fileID: 659151150}
+  CreakSound: {fileID: 1857841071}
+  ExtraCross: {fileID: 586310958}
+  fadeOut: {fileID: 2117463358}
 --- !u!1001 &1005617948
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -62374,6 +62447,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b4d0d3252571eb9468266301b65df7d2, type: 3}
+--- !u!4 &1613162061 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4101392868307516, guid: b4d0d3252571eb9468266301b65df7d2, type: 3}
+  m_PrefabInstance: {fileID: 1613162060}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1616375093
 GameObject:
   m_ObjectHideFlags: 0
