@@ -8,8 +8,12 @@ public class VaseBroken : MonoBehaviour
     public GameObject brokenVase;
     public GameObject sphereObject;
 
-    public void DamageZombie(int DamageAmount)
+
+
+
+    public void BreakTheVase()
     {
+        Debug.Log("Breaking the vase.");
         StartCoroutine(BreakVase());
     }
 

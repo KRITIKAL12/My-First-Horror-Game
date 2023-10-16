@@ -5,11 +5,13 @@ using UnityEngine;
 public class AxeCollision : MonoBehaviour
 {
     public SwingAxe SwingAxe;
-   
+    public VaseBroken vaseBroken;
+
     public int DamageAmount = 5;
 
     public void OnTriggerEnter(Collider other)
     {
+
         if (other.tag == "Enemy" && SwingAxe.IsSlashing)
         {
             Debug.Log("Axe collision with enemy.");
@@ -25,6 +27,13 @@ public class AxeCollision : MonoBehaviour
                 enemyHealth.TakeDamage(DamageAmount);
             }
         }
+
+        if (other.CompareTag("Vase") && SwingAxe.IsSlashing)
+        {
+            Debug.Log("Axe collision with vase.");
+            vaseBroken.BreakTheVase();
+        }
+
     }
 
 

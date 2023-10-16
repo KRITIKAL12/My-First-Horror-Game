@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Enemy
+  - AxeCollider
+  - Vase
   layers:
   - Default
   - TransparentFX

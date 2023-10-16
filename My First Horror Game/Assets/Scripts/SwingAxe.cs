@@ -19,7 +19,7 @@ public class SwingAxe : MonoBehaviour
                 StartCoroutine(SwingingAxe());
             }
         }
-    }
+    } 
    
     IEnumerator SwingingAxe()
     {
