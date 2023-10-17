@@ -49,18 +49,20 @@ public class StalkerAI : MonoBehaviour
         // Check for attack trigger
         if (attackTrigger == true && isAttacking == false)
         {
+            stalkerAgent.isStopped = true;
             enemySpeed = 0;
             stalkerEnemy.GetComponent<Animation>().Play("Z_Attack");
             StartCoroutine(InflictDamage());
-            stalkerAgent.isStopped = true;
+           
 
 
             chromaticAberrationEffect.intensity.value = 1f;
         }
         else
         {
-            enemySpeed = 0.01f;
             stalkerAgent.isStopped = false;
+            enemySpeed = 0.01f;
+            
         }
 
     }
@@ -100,6 +102,8 @@ public class StalkerAI : MonoBehaviour
 
         yield return new WaitForSeconds(1.9f);
         isAttacking = false;
+
+        stalkerAgent.isStopped = false;
 
         chromaticAberrationEffect.intensity.value = 0f;
 

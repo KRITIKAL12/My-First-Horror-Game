@@ -41,6 +41,7 @@ public class KeyPickup : MonoBehaviour
                 theKey.SetActive(false);
                 LockedDoor.SetActive(false);
                 ExitTrigger.SetActive(true);
+                GlobalInventory.firstDoorKey = true;
                 StartCoroutine(DoorReset());
                 
             }

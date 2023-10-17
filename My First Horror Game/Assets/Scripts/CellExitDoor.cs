@@ -23,6 +23,7 @@ public class DoorCellOpen : MonoBehaviour
         if (TheDistance <= 2)
         {
             ExtraCross.SetActive(true);
+            ActionText.GetComponent<Text>().text = "Open Door.";
             ActionDisplay.SetActive(true);
             ActionText.SetActive(true);
         }

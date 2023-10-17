@@ -22,7 +22,7 @@ public class LockedDoor : MonoBehaviour
         if (TheDistance <= 2)
         {
             ExtraCross.SetActive(true);
-            ActionText.GetComponent<Text>().text = "Open Door";
+            ActionText.GetComponent<Text>().text = "Needs a key. I'll check the house.";
             ActionDisplay.SetActive(true);
             ActionText.SetActive(true);
            
