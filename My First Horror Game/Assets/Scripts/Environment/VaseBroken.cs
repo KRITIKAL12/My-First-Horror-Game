@@ -10,6 +10,8 @@ public class VaseBroken : MonoBehaviour
     public GameObject ExtraCross;
     public float TheDistance;
     public AudioSource potteryBreak;
+    public GameObject keyObject;
+    public GameObject keyTrigger;
 
     void Update()
     {
@@ -54,6 +56,8 @@ public class VaseBroken : MonoBehaviour
     {
         this.gameObject.GetComponent<BoxCollider>().enabled = false;
         potteryBreak.Play();
+        keyObject.SetActive(true);
+        keyTrigger.SetActive(true);
         fakeVase.SetActive(false);
         brokenVase.SetActive(true);
         ExtraCross.SetActive(false);
