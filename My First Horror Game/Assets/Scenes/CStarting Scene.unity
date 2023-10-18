@@ -1937,7 +1937,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1979595765014714, guid: cce5e9dcfa8fe324db17ad993dc4a5b9, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1979595765014714, guid: cce5e9dcfa8fe324db17ad993dc4a5b9, type: 3}
       propertyPath: m_TagString
@@ -2409,7 +2409,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.8711579, y: 1.4251435, z: 0.53264534}
+  m_Size: {x: 0.8711579, y: 1.6, z: 0.53264534}
   m_Center: {x: 0.13859732, y: 0.26656187, z: 0.011039886}
 --- !u!1001 &268353207
 PrefabInstance:
@@ -26024,23 +26024,22 @@ MonoBehaviour:
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
-    m_MaxSize: 50
+    m_MaxSize: 61
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'In my village, a strange illness started to spread like wildfire. People
-    were scared, and it felt like hope was slipping away. But I couldn''t just stand
-    by. I left my village to search for a cure, and a whole year passed before I
-    finally returned with one.
-
-
-
-    But when I got back, everything had changed.
-    The village I once knew was now in ruins, and the sickness had taken its toll. 
-    Everything I had known was now doomed.'
+  m_Text: 'My heart raced as I read my dad''s letter. It sent a chill down my spine,
+    and the words were hard to swallow. There was some kind of sickness in our village,
+    something terrible that was changing people into...something else. Dad warned
+    me to stay away, to never return.                                                                                                                                                                                                                                                      
+    I rushed to the local authorities, my voice shaky, hoping they could help. They
+    said they''d look into it but offered little comfort. Time was slipping away,
+    and I couldn''t wait for bureaucracy. My parents'' faces haunted me, and I knew
+    I had to go back to the village, to find them, and try to save them from whatever
+    nightmare was unfolding. '
 --- !u!222 &640807953
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -26058,16 +26057,16 @@ RectTransform:
   m_GameObject: {fileID: 640807951}
   m_LocalRotation: {x: 0, y: 0, z: -0, w: -1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.6, y: 0.6, z: 0.6}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1985466017}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 360, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -749.3894, y: -355.9557}
+  m_AnchoredPosition: {x: 7.4556885, y: 0}
+  m_SizeDelta: {x: 354.4213, y: 337.6262}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!111 &640807955
 Animation:
@@ -39490,7 +39489,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100058, guid: 8d44a8bf542ec854ab6a6c818ea10b8a, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 100132, guid: 8d44a8bf542ec854ab6a6c818ea10b8a, type: 3}
       propertyPath: m_Name
@@ -55539,7 +55538,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1357624388}
   m_LocalRotation: {x: -0, y: -0.99947214, z: -0, w: -0.03248761}
-  m_LocalPosition: {x: -285.7, y: 3.8, z: -56.200012}
+  m_LocalPosition: {x: -223.2, y: 3.8, z: -51.1}
   m_LocalScale: {x: 1, y: 8.027433, z: 83.36888}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -66621,7 +66620,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1470893596}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 383, y: 68.2, z: 741}
+  m_LocalPosition: {x: 945, y: 68.2, z: 714.5}
   m_LocalScale: {x: 0.9999999, y: 0.9999999, z: 0.9999999}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -68519,7 +68518,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b62eda492087efc428fb1fa810adf123, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 20
+  maxHealth: 10
   TheEnemy: {fileID: 691173067}
   StatusCheck: 0
   JumpScareMusic: {fileID: 112921772}
@@ -68940,10 +68939,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1645987096}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: afea4d14b990a1842b43d5e858498ca1, type: 3}
+  m_Script: {fileID: 11500000, guid: b62eda492087efc428fb1fa810adf123, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  EnemyHealth: 20
+  maxHealth: 20
   TheEnemy: {fileID: 1806475000}
   StatusCheck: 0
   JumpScareMusic: {fileID: 112921772}
@@ -80652,7 +80651,7 @@ Light:
   m_Color: {r: 0.9150943, g: 0.22402725, b: 0, a: 1}
   m_Intensity: 3.55
   m_Range: 30
-  m_SpotAngle: 90
+  m_SpotAngle: 110
   m_InnerSpotAngle: 1
   m_CookieSize: 10
   m_Shadows:
@@ -82033,8 +82032,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ThePlayer: {fileID: 1291244991}
   DialogueBox: {fileID: 1065814630}
-  dialogueText: Why is Mr. Cal's house locked up like this? Is that an axe on his
-    door?
+  dialogueText: Why is Mr. Cal's house locked up like this?
 --- !u!65 &1862235636
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -82823,7 +82821,7 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 0.18867922, g: 0.15557136, b: 0.15557136, a: 1}
-  m_Intensity: 7
+  m_Intensity: 15
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 20.03
@@ -83057,7 +83055,7 @@ GameObject:
   - component: {fileID: 1937963278}
   - component: {fileID: 1937963277}
   m_Layer: 0
-  m_Name: Who is that
+  m_Name: What is going on here?!
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -83092,7 +83090,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ThePlayer: {fileID: 1291244991}
   DialogueBox: {fileID: 1065814630}
-  dialogueText: Who is that...
+  dialogueText: What is going on here?!
 --- !u!65 &1937963278
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -83616,8 +83614,8 @@ RectTransform:
   - {fileID: 659151151}
   - {fileID: 1499080207}
   - {fileID: 586310959}
-  - {fileID: 640807954}
   - {fileID: 2117463359}
+  - {fileID: 640807954}
   - {fileID: 1065814634}
   m_Father: {fileID: 0}
   m_RootOrder: 35
@@ -85341,7 +85339,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1985466017}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}

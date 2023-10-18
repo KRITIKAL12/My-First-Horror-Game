@@ -23,7 +23,7 @@ public class ABeginning : MonoBehaviour
         TextBox.SetActive(true);
         textBoxAnimation.Play("Beginning text Animation");
 
-        yield return new WaitForSeconds(0.11f);
+        yield return new WaitForSeconds(27);
         TextBox.GetComponent<Text>().text = "";
         FadeScreenIn.SetActive(false);
         ThePlayer.GetComponent<PlayerMovement>().enabled = true;
